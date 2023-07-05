@@ -1,0 +1,21 @@
+{
+  "name": "to-do-restify",
+  "version": "1.0.0",
+  "description": "ToDo list REST API with Restify and Mongo.",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "mongoose": "^7.3.1",
+    "restify": "^11.1.0",
+    "restify-router": "^0.6.2",
+    "yup": "^1.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "961169be-58c4-42d6-86f6-0a811ee34743",
+		"name": "ToDo Restify",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "11617536"
+	},
+	"item": [
+		{
+			"name": "Get all list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_API}}/todos?page=1&size=5&where=completed:true&fields=title:true",
+					"host": [
+						"{{BASE_API}}"
+					],
+					"path": [
+						"todos"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "size",
+							"value": "5"
+						},
+						{
+							"key": "where",
+							"value": "completed:true"
+						},
+						{
+							"key": "fields",
+							"value": "title:true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get todo by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{BASE_API}}/todos/123"
+			},
+			"response": []
+		},
+		{
+			"name": "New todo item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Task title\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{BASE_API}}/todos"
+			},
+			"response": []
+		},
+		{
+			"name": "Edit parcial todo item by id",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"completed\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{BASE_API}}/todos/64a4b23bd4af2a8f9b271349"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete todo item by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "{{BASE_API}}/todos/64a44e043802320be2815043"
+			},
+			"response": []
+		}
+	]
+}
