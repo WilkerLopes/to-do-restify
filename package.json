@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "lodash": "^4.17.21",
-    "mongoose": "^7.3.1",
+    "mongoose": "^7.5.0",
     "restify": "^11.1.0",
     "restify-router": "^0.6.2",
     "yup": "^1.2.0"
